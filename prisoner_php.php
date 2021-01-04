@@ -1,8 +1,9 @@
 <html>
 
 <head>
-  <title> Add Prisoner </title>
+  <title> Prison Management | Add Prisoner </title>
   <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="assets/dashboard.css">
   <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <script src="bootstrap-3.3.7-dist/jquery/3.2.1/jquery.min.js"></script>
 
@@ -12,26 +13,40 @@
   <head>
 
   <body>
-  
+    <header>
+      <nav class="myNavbar">
+        <div class="box">
+          <a href="user.html">
+            <img class="go-back" src="assets/images/seal-of-the-federal-bureau-of-prisons.svg-122x122.png">
+          </a>
+          <span>
+            <a class="go-back-text" href="user.html">Prison Management &nbsp;</a>
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <h2 class="title"> Add Prisoner </h2>
+    <hr>
+
     <form class="form-horizontal" action="p_reg_dbms.php" method="post">
       <fieldset>
-
-        <!-- Form Name -->
-        <legend>Add a new Prisoner</legend>
-        <legend>Go Back </legend>
+        <div>
+          <br> <br>
+        </div>
 
         <!-- Text input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Prisoner No: </label>
           <div class="col-md-4">
-            <input id="textinput" name="noinput" type="text" placeholder="eg: 0000" class="form-control input-md">
+            <input id="textinput" name="prisoner_no" type="text" placeholder="eg: 0000" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Prisoner Name: </label>
           <div class="col-md-4">
-            <input id="textinput" name="nameinput" type="text" placeholder="eg: Anurag" class="form-control input-md">
+            <input id="textinput" name="fullname" type="text" placeholder="Full Name..." class="form-control input-md">
 
           </div>
         </div>
@@ -39,21 +54,21 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Admit Date: </label>
           <div class="col-md-4">
-            <input id="textinput" name="a_date" type="text" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
+            <input id="textinput" name="admit_date" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">DOB: </label>
           <div class="col-md-4">
-            <input id="textinput" name="date" type="text" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
+            <input id="textinput" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Address: </label>
           <div class="col-md-4">
-            <input id="textinput" name="addinput" type="text" placeholder="eg: Patna" class="form-control input-md">
+            <input id="textinput" name="address" type="text" placeholder="eg: Patna" class="form-control input-md">
 
           </div>
         </div>
@@ -61,21 +76,21 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Committed Crime </label>
           <div class="col-md-4">
-            <input id="textinput" name="crimeinput" type="text" placeholder="eg: Murder" class="form-control input-md">
+            <input id="textinput" name="crime" type="text" placeholder="eg: Murder" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Cell no: </label>
           <div class="col-md-4">
-            <input id="textinput" name="c_no" type="text" placeholder="eg: 9999" class="form-control input-md">
+            <input id="textinput" name="cell_no" type="text" placeholder="eg: 9999" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Duration of Imprisonment: </label>
           <div class="col-md-4">
-            <input id="textinput" name="d_imp" type="text" placeholder="eg: 1 Months" class="form-control input-md">
+            <input id="textinput" name="duration" type="text" placeholder="eg: 1 Months" class="form-control input-md">
 
           </div>
         </div>
@@ -108,7 +123,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="singlebutton"></label>
           <div class="col-md-4">
-            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+            <button id="singlebutton" name="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
 

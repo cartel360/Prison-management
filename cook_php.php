@@ -1,8 +1,9 @@
 <html>
 
 <head>
-    <title> Login Php Page </title>
+    <title> Prison Management | Add Cook </title>
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="assets/dashboard.css">
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="bootstrap-3.3.7-dist/jquery/3.2.1/jquery.min.js"></script>
 
@@ -12,52 +13,69 @@
     <head>
 
     <body>
+
+        <header>
+            <nav class="myNavbar">
+                <div class="box">
+                    <a href="user.html">
+                        <img class="go-back" src="assets/images/seal-of-the-federal-bureau-of-prisons.svg-122x122.png">
+                    </a>
+                    <span>
+                        <a class="go-back-text" href="user.html">Prison Management &nbsp;</a>
+                    </span>
+                </div>
+            </nav>
+        </header>
+
+        <h2 class="title"> Add Cleaner </h2>
+        <hr>
+
+
         <form class="form-horizontal" action="cook_reg.php" method="post">
             <fieldset>
 
-                <!-- Form Name -->
-                <legend>Add a new Cook</legend>
+            
 
                 <!-- Text input-->
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Cook No: </label>
                     <div class="col-md-4">
-                        <input id="textinput" name="noinput" type="text" placeholder="eg: 0000" class="form-control input-md">
+                        <input id="textinput" name="cook_no" type="text" placeholder="eg: 0000" class="form-control input-md">
 
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Cook Name: </label>
                     <div class="col-md-4">
-                        <input id="textinput" name="nameinput" type="text" placeholder="eg: Anurag" class="form-control input-md">
+                        <input id="textinput" name="fullname" type="text" placeholder="eg: Anurag" class="form-control input-md">
 
                     </div>
                 </div>
 
-                <!-- <div class="form-group">
-                    <label class="col-md-4 control-label" for="textinput">Stat Date: </label>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Starting Date: </label>
                     <div class="col-md-4">
-                        <input id="textinput" name="a_date" type="text" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
+                        <input id="textinput" name="admit_date" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
 
                     </div>
-                </div> -->
+                </div>
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">DOB: </label>
                     <div class="col-md-4">
-                        <input id="textinput" name="date" type="text" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
+                        <input id="textinput" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
 
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Address: </label>
                     <div class="col-md-4">
-                        <input id="textinput" name="addinput" type="text" placeholder="eg: Patna" class="form-control input-md">
+                        <input id="textinput" name="address" type="text" placeholder="eg: Patna" class="form-control input-md">
 
                     </div>
                 </div>
 
-                
-               
+
+
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Gender: </label>
                     <input type="radio" name="gender" value="Male">

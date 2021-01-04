@@ -2,7 +2,7 @@
 
 
 <head>
-    <title>welcome to user interface</title>
+    <title>Prison Management | User Dashboard</title>
 
     <link rel="stylesheet" href="assets/prison/css/materialize.css">
     <link rel="stylesheet" href="assets/dashboard.css">
@@ -13,7 +13,7 @@
 <body>
 
     <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/prison/css/materialize-icons.css" rel="stylesheet">
     </head>
 
     <body>
@@ -159,15 +159,15 @@
                             </div>
                         </div>
                         <div class="row">
-                            <a href="cleaner_php.php">
+                            <a href="visitor.php">
                                 <div style="padding: 30px;" class="grey lighten-3 col s4 waves-effect">
                                     <i class="materialize-red-text text-lighten-1 large material-icons">person</i>
-                                    <span class="materialize-red-text text-lighten-1"><h5>Register New Visitor</h5></span>
+                                    <span class="materialize-red-text text-lighten-1"><h5>Register Visitor</h5></span>
                                 </div>
                             </a>
                             <div class="col s1">&nbsp;</div>
 
-                            <a href="cleaner_all.php">
+                            <a href="visitors_all.php">
                                 <div style="padding: 30px;" class="grey lighten-3 col s4 waves-effect">
                                     <i class="materialize-red-text text-lighten-1 large material-icons">people</i>
                                     <span class="materialize-red-text text-lighten-1"><h5>Display All Visitors</h5></span>
@@ -181,36 +181,21 @@
             </div>
         </main>
 
-        <f ooter class="indigo page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h5 class="white-text">Icon Credits</h5>
-                        <ul id='credits'>
-                            <li>
-                                Gif Logo made using <a href="https://formtypemaker.appspot.com/" title="Form Type Maker">Form Type Maker</a> from <a href="https://github.com/romannurik/FORMTypeMaker" title="romannurik">romannurik</a>
-                            </li>
-                            <li>
-                                Icons made by <a href="https://material.io/icons/">Google</a>, available under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License Version 2.0</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <footer class="materialize-red page-footer">
             <div class="footer-copyright">
-                <div class="container">
-                    <span>Made By <a style='font-weight: bold;' href="https://github.com/piedcipher" target="_blank">Tirth Patel</a></span>
-                </div>
+                <span class="footer-details"> &copy; Prison Management System | Made By 
+                    <a >Jackie Wambui</a>
+                </span>
             </div>
-            </footer>
+        </footer>
 
-            <script>
-                $('.button-collapse').sideNav();
+        <script>
+            $('.button-collapse').sideNav();
 
-                $('.collapsible').collapsible();
+            $('.collapsible').collapsible();
 
-                $('select').material_select();
-            </script>
+            $('select').material_select();
+        </script>
     </body>
 
 </html>

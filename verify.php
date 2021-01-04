@@ -1,4 +1,4 @@
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="assets/prison/js/sweetalert.min.js"></script>
 
 <?php session_start();
 session_regenerate_id();
