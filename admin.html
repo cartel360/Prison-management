@@ -1,140 +1,266 @@
 <html>
+
 <head>
-<title>welcome to user interface</title>
-<style>
-.button {
-    background-color: #DC2345;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	border-radius: 12px;
-	width: 250px;
-}
-.button {
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-.button:hover {
-    background-color: #8F0B24;
-    color: white;
-}
-.sansserif {
-    font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+
+    <title>Prison Management | AdminDashboard</title>
+
+    <link rel="stylesheet" href="assets/prison/css/materialize.css">
+    <link rel="stylesheet" href="assets/dashboard.css">
+    <script src="assets/prison/js/materialize.min.js"></script>
+    <script src="assets/prison/js/jquery-2.2.4.min.js"></script>
+    <link href="assets/prison/css/materialize-icons.css" rel="stylesheet">
 </head>
+
+
 <body>
-<html>
-<head>
-<title>welcome to user interface</title>
-<style>
-.button {
-    background-color: #DC2345;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-	border-radius: 12px;
-	width: 250px;
-	
-}
-.button {
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-.button:hover {
-    background-color: #8F0B24;
-    color: white;
-}
-.sansserif {
-    font-family: Arial, Helvetica, sans-serif;
-	font-size: 25px;
-}
-</style>
-</head>
-<body>
-<legend class="sansserif">Admin Portal</legend>
-<hr>
-<table width="20%" align="center">
-<tr>
-<td>
- <form method="post" action="admin_all.php">
-    <button type="submit" class = "button">Display All Admins</button>
-</form>
-</td>
-<td>
- <form method="post" action="guard_all.php">
-    <button type="submit" class = "button">Display All Guards
-	</button>
-</form>
-</td>
-<td>
- <form method="post" action="prison_all.php">
-    <button type="submit" class = "button">Display All Prisoners</button>
-</form>
-</td>
-<td>
- <form method="post" action="cleaner_all.php">
-    <button type="submit" class = "button">Display All Cleaners</button>
-</form>
-</form>
-</td>
-</tr>
-<tr>
-<td>
- <form method="post" action="admin_php.php">
-    <button type="submit" class = "button">Register New Admin</button>
-</form>
-</td>
-<td>
- <form method="post" action="guard_php.php">
-    <button type="submit" class = "button">Register New Guard</button>
-</form>
-</td>
-<td>
- <form method="post" action="prisoner_php.php">
-    <button type="submit" class = "button">Register New Prisoner</button>
-</form>
-</td>
-<td>
- <form method="post" action="cleaner_php.php">
-    <button type="submit" class = "button">Register New Cleaner</button>
-</form>
-</td>
-</tr>
-<tr>
-<td>
- <form method="post" action="guard_del.php">
-    <button type="submit" class = "button">Delete Guard</button>
-</form>
-</td>
 
 
-<td>
- <form method="post" action="cleaner_del.php">
-    <button type="submit" class = "button">Delete Cleaner</button>
-</form>
-</td>
+    <header>
+        <ul class="dropdown-content" id="user_dropdown">
+            <li><a class="green-text" href="logout.php">Profile</a></li>
+            <li><a class="green-text" href="logout.php">Logout</a></li>
+        </ul>
+
+        <nav class="green" role="navigation">
+            <div class="nav-wrapper">
+
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a class='right logout-btn' href='logout.php'>
+                            <i class=' material-icons'>account_circle</i> <span> Logout </span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col s6">
+                <div style="padding: 35px;" align="center" class="card">
+                    <div class="row">
+                        <div class="left card-title">
+                            <b>Guards Management</b>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a href="guard_all.php">
+                            <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                <i class="green-text text-darken-3 large material-icons">people</i>
+                                <span class="green-text text-lighten-1"><h5>Display All Guards</h5></span>
+                            </div>
+                        </a>
+                        <div class="col s1">&nbsp;</div>
+
+                        <a href="guard_php.php">
+                            <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                <i class="green-text text-darken-3 large material-icons">person</i>
+                                <span class="green-text text-lighten-1"><h5>Register New Guard</h5></span>
+                            </div>
+                        </a>
+                        <div class="col s1">&nbsp;</div>
 
 
-<td>
- <form method="post" action="prisoner_del.php">
-    <button type="submit" class = "button">Delete Prisoner</button>
-</form>
-</td>
-</tr>
-</table>
- 
+                        <a href="guard_del.php">
+                            <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                <i class="green-text text-darken-3 large material-icons">delete</i>
+                                <span class="green-text text-lighten-1"><h5>Delete Guard</h5></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s6">
+                <div style="padding: 35px;" align="center" class="card">
+                    <div class="row">
+                        <div class="left card-title">
+                            <b>Prisoners Management</b>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a href="prison_all.php">
+                            <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                <i class="green-text text-darken-3 large material-icons">people</i>
+                                <span class="green-text text-lighten-1"><h5>Display All Prisoners</h5></span>
+                            </div>
+                        </a>
+                        <div class="col s1">&nbsp;</div>
+
+                        <a href="prisoner_php.php">
+                            <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                <i class="green-text text-darken-3 large material-icons">person</i>
+                                <span class="green-text text-lighten-1"><h5>Register New Prisoner</h5></span>
+                            </div>
+                        </a>
+                        <div class="col s1">&nbsp;</div>
+
+
+                        <a href="prisoner_del.php">
+                            <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                <i class="green-text text-darken-3 large material-icons">delete</i>
+                                <span class="green-text text-lighten-1"><h5>Delete Prisoner</h5></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s6">
+                    <div style="padding: 35px;" align="center" class="card">
+                        <div class="row">
+                            <div class="left card-title">
+                                <b>Cleaners Management</b>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="cleaner_all.php">
+                                <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                    <i class="green-text text-darken-3 large material-icons">people</i>
+                                    <span class="green-text text-lighten-1"><h5>Display All Cleaners</h5></span>
+                                </div>
+                            </a>
+                            <div class="col s1">&nbsp;</div>
+
+                            <a href="cleaner_php.php">
+                                <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                    <i class="green-text text-darken-3 large material-icons">person</i>
+                                    <span class="green-text text-lighten-1"><h5>Register New Cleaner</h5></span>
+                                </div>
+                            </a>
+                            <div class="col s1">&nbsp;</div>
+
+
+                            <a href="cleaner_del.php">
+                                <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                    <i class="green-text text-darken-3 large material-icons">delete</i>
+                                    <span class="green-text text-lighten-1"><h5>Delete Cleaner</h5></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
 
 
- 
+
+                <div class="col s6">
+                    <div style="padding: 35px;" align="center" class="card">
+                        <div class="row">
+                            <div class="left card-title">
+                                <b>Cooks Management</b>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="cooks_all.php">
+                                <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                    <i class="green-text text-darken-3 large material-icons">people</i>
+                                    <span class="green-text text-lighten-1"><h5>Display All Cooks</h5></span>
+                                </div>
+                            </a>
+                            <div class="col s1">&nbsp;</div>
+
+                            <a href="cook_php.php">
+                                <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                    <i class="green-text text-darken-3 large material-icons">person</i>
+                                    <span class="green-text text-lighten-1"><h5>Register New Cook</h5></span>
+                                </div>
+                            </a>
+                            <div class="col s1">&nbsp;</div>
+
+
+                            <a href="cleaner_del.php">
+                                <div style="padding: 30px;" class="grey lighten-3 col s3 waves-effect">
+                                    <i class="green-text text-darken-3 large material-icons">delete</i>
+                                    <span class="green-text text-lighten-1"><h5>Delete Cook</h5></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s6">
+                        <div style="padding: 35px;" align="center" class="card">
+                            <div class="row">
+                                <div class="left card-title">
+                                    <b>Visitors Management</b>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a href="visitor.php">
+                                    <div style="padding: 30px;" class="grey lighten-3 col s4 waves-effect">
+                                        <i class="green-text text-darken-3 large material-icons">person</i>
+                                        <span class="green-text text-lighten-1"><h5>Register Visitor</h5></span>
+                                    </div>
+                                </a>
+                                <div class="col s1">&nbsp;</div>
+
+                                <a href="visitors_all.php">
+                                    <div style="padding: 30px;" class="grey lighten-3 col s4 waves-effect">
+                                        <i class="green-text text-darken-3 large material-icons">people</i>
+                                        <span class="green-text text-lighten-1"><h5>Display All Visitors</h5></span>
+                                    </div>
+                                </a>
+                                <div class="col s1">&nbsp;</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s6">
+                        <div style="padding: 35px;" align="center" class="card">
+                            <div class="row">
+                                <div class="left card-title">
+                                    <b>Admins Management</b>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a href="admin_php.php">
+                                    <div style="padding: 30px;" class="grey lighten-3 col s4 waves-effect">
+                                        <i class="green-text text-darken-3 large material-icons">person</i>
+                                        <span class="green-text text-lighten-1"><h5>Register Admin</h5></span>
+                                    </div>
+                                </a>
+                                <div class="col s1">&nbsp;</div>
+
+                                <a href="admin_all.php">
+                                    <div style="padding: 30px;" class="grey lighten-3 col s4 waves-effect">
+                                        <i class="green-text text-darken-3 large material-icons">people</i>
+                                        <span class="green-text text-lighten-1"><h5>Display All Admins</h5></span>
+                                    </div>
+                                </a>
+                                <div class="col s1">&nbsp;</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+    <footer class="green page-footer">
+        <div class="footer-copyright">
+            <span class="footer-details"> &copy; Prison Management System | Made By 
+                    Jackie Wambui
+                </span>
+        </div>
+    </footer>
+
+    <script>
+        $('.button-collapse').sideNav();
+
+        $('.collapsible').collapsible();
+
+        $('select').material_select();
+    </script>
 </body>
+
+
 </html>
