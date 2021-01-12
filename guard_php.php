@@ -26,7 +26,7 @@
       </nav>
     </header>
 
-    <h2 class="title"> Add Admin </h2>
+    <h2 class="title"> Add Guard </h2>
     <hr>
 
     <form class="form-horizontal" action="g_reg_dbms.php" method="post">
@@ -37,14 +37,14 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Guard No: </label>
           <div class="col-md-4">
-            <input id="textinput" name="noinput" type="text" placeholder="eg: 0000" class="form-control input-md">
+            <input id="textinput" name="number" type="text" placeholder="eg: 0000" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Guard Name: </label>
           <div class="col-md-4">
-            <input id="textinput" name="nameinput" type="text" placeholder="eg: Anurag" class="form-control input-md">
+            <input id="textinput" name="name" type="text" placeholder="eg: Anurag" class="form-control input-md">
 
           </div>
         </div>
@@ -53,21 +53,21 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">DOB: </label>
           <div class="col-md-4">
-            <input id="textinput" name="date" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
+            <input id="textinput" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Address: </label>
           <div class="col-md-4">
-            <input id="textinput" name="addinput" type="text" placeholder="eg: Patna" class="form-control input-md">
+            <input id="textinput" name="address" type="text" placeholder="eg: Patna" class="form-control input-md">
 
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Admit Date: </label>
           <div class="col-md-4">
-            <input id="textinput" name="a_date" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
+            <input id="textinput" name="admit_date" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
 
           </div>
         </div>
@@ -85,7 +85,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Assigned Block no: </label>
           <div class="col-md-4">
-            <input id="textinput" name="b_no" type="text" placeholder="eg: 9999" class="form-control input-md">
+            <input id="textinput" name="block_no" type="text" placeholder="eg: 9999" class="form-control input-md">
 
           </div>
         </div>
@@ -96,8 +96,14 @@
           <br>
           <input type="radio" name="shift" value="Night">
           Night
+        </div>
 
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Password: </label>
+          <div class="col-md-4">
+            <input id="textinput" name="password" type="password" placeholder="Password" class="form-control input-md">
 
+          </div>
         </div>
 
 

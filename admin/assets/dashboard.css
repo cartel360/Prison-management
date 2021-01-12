@@ -1,0 +1,107 @@
+/* header,
+main,
+footer {
+    padding-left: 240px;
+} */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: white;
+}
+
+@media only screen and (max-width: 992px) {
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+#credits li,
+#credits li a {
+    color: white;
+}
+
+#credits li a {
+    font-weight: bold;
+}
+
+.footer-copyright .container,
+.footer-copyright .container a {
+    color: #BCC2E2;
+}
+
+.fab-tip {
+    position: fixed;
+    right: 85px;
+    padding: 0px 0.5rem;
+    text-align: right;
+    background-color: #323232;
+    border-radius: 2px;
+    color: #FFF;
+    width: auto;
+}
+
+.logout-btn {
+    display: inline-flex;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #DC2345;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.go-back {
+    width: 50px !important;
+    height: 50px !important;
+    padding-left: 20px;
+}
+
+.go-back-text {
+    padding-left: 10px;
+    font-size: 20px;
+    text-decoration: none !important;
+    color: white;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.myNavbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav {
+    width: 100% !important;
+}
+
+.footer-copyright .footer-details {
+    padding-left: 30%;
+    font-size: 22px;
+}
