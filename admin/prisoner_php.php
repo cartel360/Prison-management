@@ -54,9 +54,10 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Admit Date: </label>
           <div class="col-md-4">
-            <input id="textinput" name="admit_date" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
-
+            <input readonly id="date" name="admit_date" type="date" placeholder="eg: YYYY-MM-DD" value="<?php echo date('Y-m-d'); ?>" class="form-control input-md">
           </div>
+        </div>
+        
         </div>
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">DOB: </label>
