@@ -57,12 +57,11 @@
             <input readonly id="date" name="admit_date" type="date" placeholder="eg: YYYY-MM-DD" value="<?php echo date('Y-m-d'); ?>" class="form-control input-md">
           </div>
         </div>
-        
+
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">DOB: </label>
           <div class="col-md-4">
-            <input id="date" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
-
+            <input id="date" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md" max="2003-01-01">
           </div>
         </div>
         <div class="form-group">
@@ -127,10 +126,11 @@
           </div>
         </div>
 
+
       </fieldset>
     </form>
 
- 
+
 
 
   </body>

@@ -62,7 +62,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">DOB: </label>
                     <div class="col-md-4">
-                        <input id="textinput" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
+                        <input id="textinput" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md" max="2003-01-01">
 
                     </div>
                 </div>

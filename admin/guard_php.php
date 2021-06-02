@@ -53,8 +53,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">DOB: </label>
           <div class="col-md-4">
-            <input id="textinput" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md">
-
+            <input id="date" name="dob" type="date" placeholder="eg: YYYY-MM-DD" class="form-control input-md" max="2003-01-01">
           </div>
         </div>
         <div class="form-group">
@@ -120,6 +119,35 @@
 
       </fieldset>
     </form>
+    <script>
+      function getAge() {
+        var dateString = document.getElementById("date").value;
+        if (dateString != "") {
+          var today = new Date();
+          var birthDate = new Date(dateString);
+          var minDate = today.getFullYear() - birthDate.getFullYear();
+          var age = today.getFullYear() - birthDate.getFullYear();
+          var m = today.getMonth() - birthDate.getMonth();
+          var da = today.getDate() - birthDate.getDate();
+          if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+          }
+          if (m < 0) {
+            m += 12;
+          }
+          if (da < 0) {
+            da += 30;
+          }
+          if (age < 18 || age > 100) {
+            alert("Age " + age + " is restricted");
+          } else {
+            alert("Age " + age + " is allowed");
+          }
+        } else {
+          alert("Please provide your date of birth");
+        }
+      }
+    </script>
   </body>
 
 </html>
