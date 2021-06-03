@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jan 25, 2021 at 11:50 AM
+-- Generation Time: Jun 02, 2021 at 06:02 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
+  `email` varchar(250) NOT NULL,
   `name` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -36,8 +37,8 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`name`, `password`) VALUES
-('admin', 'admin');
+INSERT INTO `admin` (`email`, `name`, `password`) VALUES
+('billycartel360@gmail.com', 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -146,10 +147,16 @@ CREATE TABLE `prisoner` (
 --
 
 INSERT INTO `prisoner` (`pno`, `Name`, `admit_date`, `DOB`, `address`, `crime`, `sex`, `ptype`, `duration`, `cellno`) VALUES
+('001P', 'Olala Victor', '2021-06-01', '2003-01-01', 'Nairobi', 'Murder', 'Male', 'Maximum security', '18 months', '1001'),
 ('211', 'John Doe', '2020-12-31', '2000-01-12', 'Thika', 'Murder', 'Male', 'Standard security', '18 months', '123'),
+('prs200', 'Somebody Someone', '2021-06-01', '2003-01-01', 'General Kago', 'Murder', 'Male', 'Maximum security', '60 Months', '123'),
+('prsn000', 'Him His', '2021-06-01', '2003-01-01', 'General Kago Two', 'Murder', 'Female', 'Minimum security', '18 months', '005'),
 ('prsn001', 'Mary Smith', '2021-01-04', '2000-01-04', 'Thika', 'Robbery', 'Female', 'Maximum security', '60 Months', '123'),
+('prsn0010', 'Somebody Someone', '2021-06-01', '2003-01-01', 'Thika', 'Murder', 'Male', 'Standard security', '60 Months', '0050'),
 ('prsn002', 'Him His', '2021-01-06', '1995-02-11', 'Nairobi', 'Robbery', 'Male', 'Standard security', '18 months', '005'),
-('prsn003', 'Somebody Someone', '2021-01-12', '1990-02-14', 'Thika', 'Robbery', 'Male', 'Maximum security', '18 months', '100');
+('prsn003', 'Somebody Someone', '2021-01-12', '1990-02-14', 'Thika', 'Robbery', 'Male', 'Maximum security', '18 months', '100'),
+('prsn0035', 'Apalla maguanda', '2021-06-01', '2003-01-01', 'General Kago Two', 'Robbery', 'Male', 'Maximum security', '60 Months', '102'),
+('prsn0102', 'Mary Smith', '2021-06-01', '2003-01-01', 'Thika', 'Robbery', 'Female', 'Maximum security', '60 Months', '121');
 
 -- --------------------------------------------------------
 

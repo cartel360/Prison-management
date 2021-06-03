@@ -72,9 +72,9 @@ $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = ""; // Enter your Email
-$mail->Password = ""; // Enter your Email Password
-$mail->SetFrom("");
+$mail->Username = "prisonmanagement2003@gmail.com"; // Enter your Email
+$mail->Password = "prisonmanagement61"; // Enter your Email Password
+$mail->SetFrom("prisonmanagement2003@gmail.com");
 $mail->Subject = "New Prisoner Added";
 $mail->Body = $message;
 $mail->AddAddress($email);
