@@ -1,4 +1,4 @@
- <p>Thank You for Shopping With Us, Have a Great Time</p>
+
 
  <?php
 
@@ -28,13 +28,7 @@
 
     $form_data = array("name" => $name, "email" => $email, "address" => $address, "state" => $state, "country" => $country, "final_price" => $final_price);
 
-    $message = "Dear " . $form_data['name'] . "\r\n";
-    $message .= "We have already received your order\r\n";
-    $message .= "We will deliver the product for you as soon as possible.\r\n";
-    $message .= "The total price of your order is " . $form_data['final_price'] . ".\r\n";
-    $message .= "Your address is " . $form_data['address'] . " " . $form_data['state'] . " " . $form_data['country'] . "\r\n";
-    $message .= "Thank You.\r\n";
-    $message .= "Have a good day.\r\n";
+    $message = "";
 
 
 
